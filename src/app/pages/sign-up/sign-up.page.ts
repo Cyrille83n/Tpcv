@@ -17,7 +17,6 @@ export class SignUpPage implements OnInit {
 
   initForm(){
     this.userForm = this.formBuilder.group({
-      username : ['', [Validators.required, Validators.minLength(4)]],
       email : ['', [Validators.required, Validators.email]],
       password : ['', [Validators.required, Validators.minLength(6)]],
     });

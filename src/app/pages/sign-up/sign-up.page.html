@@ -25,6 +25,10 @@
             <!-- Calling SignIn Api from AuthService -->
             <ion-button fill="solid" class="ion-margin-top" expand="block" [disabled]="userForm.invalid" (click)="authService.SignUp(userEmail.value, userPwd.value)">
                 Inscription</ion-button>
+
         </form>
+        <div class="redirectToLogin">
+            <span>Revenir à? <span class="redirect" routerLink="/sign-in">Connexion</span></span>
+        </div>
     </ion-list>
 </ion-content>
